@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap1 | grep -vE '^\.\.?$' | LC_COLLATE=C sort -t/ -k1.1d,1.1 -k1.2n | paste -sd ',' - | awk '{print $0 ""}'
+ls -mpax
